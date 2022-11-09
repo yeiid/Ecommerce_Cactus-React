@@ -1,0 +1,15 @@
+[
+    {
+        "precio": 3000,
+        "id": 3,
+        "title": "matera-azul",
+        "thumbnailUrl": "src/img/1.jpeg"
+      },
+      {
+        "precio": 3000,
+        "id": 4,
+        "title": "matera",
+        "thumbnailUrl": "src/img/2.jpeg"
+      }
+
+]

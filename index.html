@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/index.css">
+    <title>PAUCHY</title>
+</head>
+<body>
+    <header>
+      <!-- <img  onmouseover="showCart(this)" id="menu-ico" alt=""> -->
+        <div class="container" >
+            <div class="logo">PAUCHY</div>
+            <nav>
+                <a href="#Inicio">INICIO</a>
+                <a href="#Sobre-nosotros" >NOSOTROS</a>
+                <a href="#Especies">ESPECIES</a>
+                <a href="#Materas">MATERAS</a>
+            </nav>
+        </div>
+          <div class="cart-products" id="products-id">
+            <!-- <p class="cierre" onclick="closeBtn()">x</p> -->
+           <button id="cierre" onclick="closeBtn()">X</button>
+            <h4>Carrito de compras</h4>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Item</th>
+                  <th scope="col">Cantidad</th>
+                  <th scope="col">Acción</th>
+                  <th scope="col">Total</th>
+                </tr>
+              </thead>
+              <tbody id="items"></tbody>
+              <tfoot>
+                <tr id="footer">
+                  <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+                </tr>
+              </tfoot>
+              </table>
+          </div>
+        </div>
+        <div class="logoC">
+          <img onmouseover="showCart(this)" class="cart" src="src/img/cart.png" alt="">
+          <!-- <p id="count-product">0</p> -->
+        </div>
+        <template id="template-carrito">
+          <tr>
+            <th scope="row">id</th>
+            <td>Café</td>
+            <td>1</td>
+            <td>
+                <button class="btn btn-info btn-sm">+</button>
+                <button class="btn btn-danger btn-sm">-</button>
+            </td>
+            <td>$ <span>500</span></td>
+          </tr>
+        </template>
+    </header>
+    <section id="Inicio">
+        <div class="container">
+          <div class="slayer">
+            <div class="slaider">
+                <ul>
+                    <li><img src="src/img/1.jpeg" alt="1"></li>
+                    <li><img src="src/img/2.jpeg" alt="2"></li>
+                    <li><img src="src/img/3.jpeg" alt="3"></li>
+                    <li><img src="src/img/4.jpeg" alt="4"></li>
+                    <li> <img src="src/img/1.jpeg" alt="5"></li>
+                    <li><img src="src/img/1.jpeg" alt="6"></li>
+                    <li><img src="src/img/1.jpeg" alt="7"></li>
+                    <li><img src="src/img/1.jpeg" alt="7"></li>
+                    <li><img src="src/img/1.jpeg" alt="7"></li>
+                    <li><img src="src/img/1.jpeg" alt="1"></li>
+                    <li><img src="src/img/1.jpeg" alt="2"></li>
+                    <li><img src="src/img/1.jpeg" alt="3"></li>
+                </ul>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <section id="Sobre-nosotros">
+        <h2>SOBRE NOSOTROS <hr></h2>
+        <div class="container">
+            <div class="img-container">
+              <img src="src/img/IMG_4743.jpg" alt="">
+            </div>
+            <div class="parrafo">
+                <h1> UN POCO DE NOSOTROS</h1>
+                <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius quod deleniti labore! Nihil, nisi a? Deleniti debitis minima, autem, quas odio totam sed delectus voluptatem voluptate, reprehenderit amet optio repellendus?
+                </P>
+        </div>
+        </div>
+    </section>
+
+    <section id="Especies">
+        <h2>ESPECIES DE CACTUS<hr></h2>
+  
+
+        <div class="container">
+          <div class="row2" id="cards2"></div>
+        </div>
+        <template id="template-card2">
+            <div class="card2">
+              <img src="" alt="" class="img-card-top">
+                <h5 class="T2">Titulo</h5>
+                <p class="P2">precio</p>
+                <button class="btn btn-dark2">Comprar</button>
+            </div>
+        </template>
+    </section>
+
+    <section id="Materas">
+        <h2>MATERAS<hr></h2>
+
+        <div class="container">
+            <div class="row" id="cards"></div>
+          </div>
+          <template id="template-card">
+              <div class="card">
+                <img src="" alt="" class="img-card-top">
+                  <h5 class="T1">Titulo</h5>
+                  <p class="P1">precio</p>
+                  <button class="btn btn-dark">Comprar</button>
+              </div>
+          </template>
+
+            <template id="template-footer">
+              <th scope="row" colspan="2">Total productos</th>
+              <td>10</td>
+              <td>
+                  <button class="btn btn-danger btn-sm" id="vaciar-carrito">vaciar todo</button>
+                  <a href="nosotros.html"><button id="comprar">comprar</button></button></a>
+              </td>
+              <td class="font-weight-bold">$ <span>5000</span></td>
+          </template>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; programaYH 2022</p>
+        </div>
+    </footer>
+    <script src="./src/js/materas.js"></script>
+    <script src="./src/js/index.js" type="module"></script>
+</body>
+</html>

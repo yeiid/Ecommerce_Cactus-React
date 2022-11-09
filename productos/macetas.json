@@ -1,0 +1,16 @@
+[
+    {
+        "precio": 8000,
+        "id": 1,
+        "title": "matera-1",
+        "thumbnailUrl": "src/img/0.2.jpeg"
+      },
+      {
+        "precio": 8000,
+        "id": 2,
+        "title": "matera",
+        "thumbnailUrl": "src/img/0.2.jpeg"
+      }
+
+
+]

@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --blanco:rgb(227, 235, 235);
+    --botonera:rgb(195, 204, 195);
+    --difusion:rgba(94, 100, 95, 0.774);
+    --fondo: #618f66;
+}
+
+h2{
+    font-size: 2em;
+    font-weight: bold;
+    margin: 1em;
+}
+h5{
+    font-size:1.5em;
+    font-weight: bold;
+}
+p{
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+button{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px 5px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0.5);
+    box-shadow: 4px 1px 8px rgb(0, 0, 0.5);
+    color: white;
+    background-color: var(--botonera);
+}
+button:hover{
+    background-color: var(--difusion);
+}
+
+
+header{
+    background-color: var(--blanco);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    /* position: fixed; */
+
+}
+
+
+header .logo{
+    font-size: 3em;
+}
+/* header #menu-ico{
+    width: 50px;
+} */
+
+header nav{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+header a:hover{
+    color: var(--difusion);
+}
+
+
+header .logoC{
+    display: flex;
+    flex-direction: row-reverse;
+    /* margin-bottom: 100%; */
+
+}
+
+
+header .cart{
+    width: 39px;
+    height: 38px;
+    position: fixed;
+    top: 15px; 
+    right: 20px;
+    position: fixed;
+
+    
+}
+header button{
+    font-size: 14px;
+    background-color: var(--botonera);
+}
+header table{
+    width: 5px;
+}
+.cart-products{
+    /* position: absolute!important; */
+    background-color: var(--blanco);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+
+    
+}
+
+.cart:hover{
+    margin-bottom: 16px;
+    transition-duration: .5s;
+}
+#Inicio{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+#Inicio .container{
+    background-color: #a7ccab73;
+    width: 100%;
+    align-items: center;
+}
+#Inicio  .slayer{
+    background-color: rgb(219, 122, 10);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    overflow: hidden;
+}
+#Inicio  .slaider{
+    width: 100%;
+}
+#Inicio  .slaider li{
+    list-style: none;
+    /* padding: 0.7em; */
+}
+#Inicio  .slaider img{
+    width: 100%;
+}
+#Inicio  .slaider ul{
+    display: flex;
+    animation: cambio 5s infinite alternate linear;
+    width: 400%;
+}
+
+@keyframes cambio{
+    0%{margin-left: -0%;}
+    10%{margin-left: -10%;}
+    
+    20%{margin-left: -50%;}
+    30%{margin-left: -105%;}
+    
+    40%{margin-left: -150%;}
+    50%{margin-left: -205%;}
+    
+    60%{margin-left: -250%;}
+    100%{margin-left: -290%;}
+}
+#Sobre-nosotros{
+    background-color: var(--blaco);
+}
+#Sobre-nosotros .container{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+}
+#Sobre-nosotros img{
+    width: 50%;
+    padding: 20px;
+
+}
+
+#Sobre-nosotros .parrafo{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    padding: 20px;
+
+    /* ESPECIES****************************** */
+}
+/* MATERAS PARA VENDER **************/
+
+
+#Especies {
+    /* background-image: url('../img/morning-light-in-the-sonoran-desert-in-scottsdale-arizona.jpg'); */
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#Especies #cards2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#Especies .card2{
+    width: 70%;
+    background-color: var(--difusion);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    padding: 10px;
+    border-radius: 15px;
+}
+#Especies img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+
+/* MATERAS ****************************** */
+
+/* #Materas {
+
+} */
+#Materas .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+#Materas .card{
+    width: 70%;
+    background-color: var(--difusion);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#Materas img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+@media(min-width: 720px){
+    header {
+        top: 0;
+        width: 100%;
+        position: fixed;
+        background-color: var(--blanco);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        
+    }
+    header .container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    header nav{
+        flex-direction: row;
+        padding:20px ;
+        font-size: larger;
+    }
+    header .logoC{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 10%;
+        
+    }
+    header .cart{
+        width: 39px;
+        height: 38px;
+        position: fixed;
+        top: 15px;
+        right: 20px;
+    }
+    .cart-products{
+        position: absolute!important;
+        top: 90px;
+        right: 10px;
+        background-color: #fff;
+        padding: 0 18px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+        display: none;
+        min-width: 290px;
+        /* position: fixed; */
+    
+    }
+    
+    .cart:hover{
+        margin-bottom: 16px;
+        transition-duration: .5s;
+    }
+    #Inicio{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 2rem;
+        padding: 25px;
+    
+    }
+    #Inicio .container{
+        background-color: #a7ccab;
+        width: 100%;
+        margin: 5rem;
+        border-radius: 35px;
+    }
+    #Inicio  .slayer{
+        /* background-color: rgb(0, 0, 0); */
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        overflow: hidden;
+        border-radius: 35px;
+    }
+    #Inicio  .slaider{
+        width: 100%;
+    }
+    #Inicio  .slaider li{
+        list-style: none;
+        /* padding: 0.7em; */
+    }
+    #Inicio  .slaider img{
+        width: 100%;
+    }
+    #Inicio  .slaider ul{
+        display: flex;
+        animation: cambio 5s infinite alternate linear;
+        width: 400%;
+    }
+    
+    @keyframes cambio{
+        0%{margin-left: -0%;}
+        10%{margin-left: -10%;}
+        
+        20%{margin-left: -50%;}
+        30%{margin-left: -105%;}
+        
+        40%{margin-left: -150%;}
+        50%{margin-left: -205%;}
+        
+        60%{margin-left: -250%;}
+        100%{margin-left: -290%;}
+    }
+    #Sobre-nosotros{
+        margin: 2rem;
+    }
+    #Sobre-nosotros .container{
+        display: flex;
+        flex-direction: row;
+        place-items: center;
+    }
+    #Sobre-nosotros .parrafo {
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+    #Sobre-nosotros  h1 {
+        padding-bottom: 5rem;
+        width: 100%;
+        font-size: 50px;
+    }
+    #Sobre-nosotros .img-container{
+        width: 50%;
+        padding-right: 5rem;
+    }
+    #Sobre-nosotros img{
+        width: 100%;
+        padding: 20px;
+    
+    }
+/* especies*************************************** */
+    #Especies {
+        margin: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Especies #cards2{
+        background-color: #698b6d31;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #Especies .card2{
+        width: 15%;
+        background-color: var(--difusion);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        border-radius: 18px;
+    }
+    #Especies img{
+        width: 100%;
+        border-radius: 38px;
+    }
+/* materas ************************ */
+#Materas {
+    
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Materas #cards{
+    background-color: #698b6d31;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#Materas .card{
+    width: 15%;
+    background-color: var(--difusion);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 18px;
+}
+#Materas img{
+    width: 100%;
+    border-radius: 38px;
+}
+}
